@@ -9,4 +9,5 @@ robobrowser,
 Beautifulsoup 4,
 asyncio,
 discord,
+lxml,
 python3.x
