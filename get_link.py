@@ -11,7 +11,7 @@ def get_html(): # Method to login on the page
     form['username'] = ""
     form['password'] = ""
     br.submit_form(form)
-    src = str(br.parsed())         # saves the parsed site to src wich is wirtten to
+    src = str(br.parsed())         # saves the parsed site to src which is wirtten to
     file = open("text.html", "w")  # the file text.html
     file.write(src)
     file.close()
@@ -190,7 +190,7 @@ def get_information_main(i):
         if x != 0:
             test = str(text[0]) + "\n" + str(text[x])+"\n"
 
-    return test # if the script is started standalone comment this line out and umcomment the line below
+    return test # if the script is started standalone comment this line out and uncomment the line below
     #print(test)
 
 if __name__ == '__main__':
