@@ -6,7 +6,7 @@ from w3lib.html import remove_tags
 def get_html(): # Method to login on the page
 
     br = RoboBrowser()
-    br.open("https://moodle.bk-technik-moers.de/course/view.php?id=688")
+    br.open("")     # you might change the url to your course page, the direkt link to the page
     form = br.get_form()
     form['username'] = ""
     form['password'] = ""
