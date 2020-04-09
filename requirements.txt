@@ -1,1 +1,6 @@
-
+w3lib 
+robobrowser 
+beautifulsoup4
+asyncio
+discord
+lxml
