@@ -43,31 +43,24 @@ def strip_html(input):
 
 
 def get_information_main(i):
-    text = list(get_elements(i))
-    links = ""
-    test2 = []
-    linkin = []
-    for x in range(len(text)): # this sorts the lists returned by get_elements. [0] holds always the links, that makes it easier to format the text
-        if x != 0:
-            test2 = test2 + text[x]
-            links = text[0] #+ "\n" + test2#+ "\n" + str(text[x])+"\n"
-
+    data = list(get_elements(i))
+    links = data[0]
+    text = data[1:-1]
+    link = []
     links.reverse()
-    counter = 2
+    indexer = 2
     section = "section-" + str(counter)
-    blabla = ""
-    for link in links:
-        if link == "https://moodle.bk-technik-moers.de/course/view.php?id=688#" + section:
-            counter += 1
-            section = "section-" + str(counter)
-            #print(newLinks)
+    textOut = ""
+    for i_l in links:
+        if i_l == "https://moodle.bk-technik-moers.de/course/view.php?id=688#" + section:
+            indexer += 1
+            section = "section-" + str(indexer)
         else:
-            #print(section + ":" + link)
-            linkin = linkin + [link]
-    linkin = list(dict.fromkeys(linkin))
-    for i_t in range(len(test2)):
-        blabla = str(test2[i_t])
-    return blabla, linkin
+            link = link + [i_l]
+    link = list(dict.fromkeys(link))
+    for i_t in range(len(text)):
+        textOut = str(text[i_t])
+    return textOu, linkin
 
 if __name__ == '__main__':
     get_information_main(6)  # the number of the section that gets printed
