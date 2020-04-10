@@ -28,7 +28,7 @@ async def post_tasks(): # background method to send the data extracted in get_li
             await channel.send(embed=message)
             #await channel.send(str(lists[section])+'\n'+str(get_link.get_information_main(section)).replace('[', '').replace(']', '').replace("'", ''))
         await channel.send('@everyone ')
-        await asyncio.sleep(86400)  # task runs every 60 seconds
+        await asyncio.sleep(86400)  # task runs every 86400 seconds or better every 24h
 
 
 @client.event
