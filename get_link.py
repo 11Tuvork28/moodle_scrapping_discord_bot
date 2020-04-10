@@ -8,8 +8,8 @@ def get_html(): # Method to login on the page
     br = RoboBrowser()
     br.open("https://moodle.bk-technik-moers.de/course/view.php?id=688")
     form = br.get_form()
-    form['username'] = "hagenguthma"
-    form['password'] = "VxCreeepeR12360814630@xamh.de"
+    form['username'] = ""
+    form['password'] = ""
     br.submit_form(form)
     src = str(br.parsed())         # saves the parsed site to src which is wirtten to
     file = open("text.html", "w")  # the file text.html
