@@ -16,7 +16,7 @@ async def post_tasks(): # background method to send the data extracted in get_li
         for section in range(2, 14): # goes through every section in get_link.py
             text = str(get_link.get_information_main(section)).replace('[', '').replace(']', '').replace("'", '') # calls get_link with section(an int), so that the script knows wich section
             if text == None:
-                test = "Oh nichts gefuden xD"
+                test = "Oh nothing found xD"
             else:
                 test = "Footer :D"
             message = discord.Embed(
@@ -25,7 +25,7 @@ async def post_tasks(): # background method to send the data extracted in get_li
                 colour = discord.Colour.blurple()
             )
             message.set_footer(text= test)
-            #await channel.send(embed=message)
+            await channel.send(embed=message)
             #await channel.send(str(lists[section])+'\n'+str(get_link.get_information_main(section)).replace('[', '').replace(']', '').replace("'", ''))
         await channel.send('@everyone ')
         await asyncio.sleep(86400)  # task runs every 60 seconds
