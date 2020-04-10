@@ -60,7 +60,7 @@ def get_information_main(i):
     link = list(dict.fromkeys(link))
     for i_t in range(len(text)):
         textOut = str(text[i_t])
-    return textOu, linkin
+    return textOut, linkin
 
 if __name__ == '__main__':
     get_information_main(6)  # the number of the section that gets printed
