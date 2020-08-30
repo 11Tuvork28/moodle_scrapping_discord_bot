@@ -4,10 +4,10 @@ I might be a late but this bot can send the content of a moodle course in any gi
 The message is sent every 24hours in an relative nice embed.
 # requirements
 You will need the follwing packages:
-w3lib,
-robobrowser,
-Beautifulsoup 4,
-asyncio,
-discord,
-lxml,
-python3.x
+- w3lib,
+- robobrowser,
+- Beautifulsoup 4,
+- asyncio,
+- discord,
+- lxml,
+- python3.x
