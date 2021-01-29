@@ -1,4 +1,6 @@
 import bs4 as bs
+import werkzeug
+werkzeug.cached_property = werkzeug.utils.cached_property
 from robobrowser import RoboBrowser
 from w3lib.html import remove_tags
 
